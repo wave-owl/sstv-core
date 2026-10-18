@@ -144,9 +144,28 @@ memory is allocated at create; no globals; one instance per thread.
 Threshold curves at 12000 Hz (white noise, SNR in 3 kHz; per cell: images decoded / runs,
 mean region error in levels, mean PSNR):
 
-THRESHOLD_TABLE
+| mode | 30 dB | 20 dB | 15 dB | 10 dB | 5 dB | 0 dB | -5 dB |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| M1 | 2/2, 4 lv, 27.1 dB | 2/2, 3 lv, 25.6 dB | 2/2, 6 lv, 24.2 dB | 2/2, 6 lv, 21.8 dB | 2/2, 5 lv, 20.3 dB | 2/2, 8 lv, 16.1 dB | 2/2, 167 lv, 4.4 dB |
+| S1 | 2/2, 4 lv, 17.2 dB | 2/2, 3 lv, 16.3 dB | 2/2, 6 lv, 13.7 dB | 2/2, 6 lv, 13.6 dB | 2/2, 5 lv, 14.8 dB | 2/2, 6 lv, 14.7 dB | 2/2, 58 lv, 8.0 dB |
+| SDX | 2/2, 1 lv, 19.5 dB | 2/2, 2 lv, 19.8 dB | 2/2, 3 lv, 18.8 dB | 2/2, 3 lv, 19.3 dB | 2/2, 2 lv, 18.8 dB | 2/2, 2 lv, 17.3 dB | 2/2, 10 lv, 13.5 dB |
+| R36 | 2/2, 6 lv, 20.2 dB | 2/2, 8 lv, 19.4 dB | 2/2, 48 lv, 10.4 dB | 2/2, 14 lv, 16.8 dB | 2/2, 71 lv, 12.3 dB | 2/2, 114 lv, 9.6 dB | 2/2, 93 lv, 7.7 dB |
+| R72 | 2/2, 6 lv, 21.2 dB | 2/2, 8 lv, 20.2 dB | 2/2, 14 lv, 12.7 dB | 2/2, 32 lv, 11.8 dB | 2/2, 38 lv, 12.0 dB | 2/2, 48 lv, 10.9 dB | 2/2, 60 lv, 8.9 dB |
+| PD120 | 2/2, 6 lv, 17.7 dB | 2/2, 9 lv, 17.3 dB | 2/2, 24 lv, 9.7 dB | 2/2, 41 lv, 12.6 dB | 2/2, 33 lv, 8.8 dB | 2/2, 16 lv, 12.1 dB | 2/2, 43 lv, 7.9 dB |
+| R8BW | 2/2, 3 lv, 18.5 dB | 2/2, 3 lv, 18.2 dB | 2/2, 5 lv, 17.8 dB | 2/2, 5 lv, 16.4 dB | 2/2, 4 lv, 14.8 dB | 2/2, 7 lv, 12.5 dB | 2/2, 44 lv, 7.2 dB |
+| P3 | 2/2, 3 lv, 20.2 dB | 2/2, 3 lv, 20.0 dB | 2/2, 5 lv, 19.6 dB | 2/2, 5 lv, 19.4 dB | 2/2, 5 lv, 18.5 dB | 2/2, 7 lv, 15.4 dB | 2/2, 135 lv, 6.9 dB |
+| W2180 | 2/2, 3 lv, 21.6 dB | 2/2, 3 lv, 21.3 dB | 2/2, 6 lv, 19.8 dB | 2/2, 5 lv, 20.6 dB | 2/2, 5 lv, 19.0 dB | 2/2, 6 lv, 16.9 dB | 2/2, 134 lv, 7.5 dB |
 
-Martin, Scottie and the B/W modes stay within 10 levels down to 0 dB. The YUV modes
+False images on white noise (station settings, timeout 5 s):
+
+| noise level (rms, of full scale) | minutes | images |
+|---:|---:|---:|
+| 0.01 | 30 | 0 |
+| 0.10 | 30 | 0 |
+| 0.30 | 30 | 0 |
+
+(`python3 tools/threshold.py --build build`, 2 runs per cell.) Martin, Scottie, Pasokon,
+Wraase and the B/W modes stay within 10 levels down to 0 dB. The YUV modes
 (Robot, PD) are as fragile as slowrx itself from about 15 dB down: slowrx's line-start finder
 (`sync.c:96-127`) sometimes locks the line start 1-8 ms off under noise, which shifts the
 picture sideways (the same pictures as slowrx, byte for byte, at 12 dB).
