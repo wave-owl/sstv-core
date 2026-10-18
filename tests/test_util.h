@@ -15,9 +15,7 @@
 #define M_PI 3.14159265358979323846
 #endif
 
-static int g_failures = 0;
-static int g_checks = 0;
-
+/* CHECK() counts into g_checks / g_failures, which the test program defines. */
 #define CHECK(cond, ...)                                                                    \
     do {                                                                                    \
         g_checks++;                                                                         \

@@ -36,7 +36,7 @@ the same definitions as sstv-core's U1, U2, U6 and U7 (src/sstv_rx.c). Bench har
    // Initialize Hann windows of different lengths
 --- a/fsk.c
 +++ b/fsk.c
-@@ -45,11 +45,6 @@
+@@ -45,13 +45,8 @@
      // Read data from DSP
      readPcm(InSync ? 970: 485);
  
@@ -46,5 +46,8 @@ the same definitions as sstv-core's U1, U2, U6 and U7 (src/sstv_rx.c). Bench har
 -    }
 -
      // Apply Hann window
-     for (i = 0; i < 970; i++) fft.in[i] = pcm.Buffer[pcm.WindowPtr+i- 485] * Hann[i];
+-    for (i = 0; i < 970; i++) fft.in[i] = pcm.Buffer[pcm.WindowPtr+i- 485] * Hann[i];
++    for (i = 0; i < 970; i++) fft.in[i] = pcm.Buffer[(int)(pcm.WindowPtr+i) - 485] * Hann[i];
      
+     pcm.WindowPtr += (InSync ? 970 : 485);
+ 

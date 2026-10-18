@@ -20,7 +20,9 @@ terminates (sstv-core's U1, U2, U6, U7, see `src/sstv_rx.c`):
   FSK sync (the pointer does not move inside that branch) -> branch removed; the FSK window
   can then reach up to 485 samples before slowrx's 4096-sample buffer, so the driver backs
   `pcm.Buffer` by the whole file (`readPcm` advances a pointer instead of shifting a copy:
-  the same `Buffer[0 .. 4095]` at every call, and the stream's samples before it).
+  the same `Buffer[0 .. 4095]` at every call, and the stream's samples before it), and the
+  patch computes the window index signed (slowrx's `WindowPtr + i - 485` with the unsigned
+  `i` would wrap to an index 4 GiB away).
 
 The driver allocates slowrx's `HasSync` twice as large as slowrx does, so reads past the
 stored sync samples (the slant-corrected rate at the end of an image) see zeros (U3); it

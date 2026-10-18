@@ -15,6 +15,9 @@
  */
 #include "test_util.h"
 
+static int g_failures = 0;
+static int g_checks = 0;
+
 #define GOLDEN_RATE 12000
 
 static int16_t *tone_buf;
