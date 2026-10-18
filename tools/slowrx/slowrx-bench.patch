@@ -1,0 +1,50 @@
+Defined behaviour where slowrx (commit ca6d701) reads outside an array or never terminates;
+the same definitions as sstv-core's U1, U2, U6 and U7 (src/sstv_rx.c). Bench harness only.
+--- a/vis.c
++++ b/vis.c
+@@ -64,7 +64,7 @@
+         Power[MaxBin] > 0 && Power[MaxBin+1] > 0 && Power[MaxBin-1] > 0)
+          HedrBuf[HedrPtr] = MaxBin +            (log( Power[MaxBin + 1] / Power[MaxBin - 1] )) /
+                              (2 * log( pow(Power[MaxBin], 2) / (Power[MaxBin + 1] * Power[MaxBin - 1])));
+-    else HedrBuf[HedrPtr] = HedrBuf[(HedrPtr-1) % 45];
++    else HedrBuf[HedrPtr] = HedrBuf[(HedrPtr+44) % 45];
+ 
+     // In Hertz
+     HedrBuf[HedrPtr] = HedrBuf[HedrPtr] / FFTLen * 44100;
+--- a/sync.c
++++ b/sync.c
+@@ -58,7 +58,7 @@
+             d = LineWidth + round( -cx * sin(deg2rad(q/2.0)) + cy * cos(deg2rad(q/2.0)) );
+             if (d > 0 && d < LineWidth) {
+               lines[d][q-MINSLANT*2] ++;
+-              if (lines[d][q-MINSLANT*2] > lines[dMost][qMost-MINSLANT*2]) {
++              if (lines[d][q-MINSLANT*2] > (qMost == 0 ? 0 : lines[dMost][qMost-MINSLANT*2])) {
+                 dMost = d;
+                 qMost = q;
+               }
+--- a/video.c
++++ b/video.c
+@@ -47,7 +47,8 @@
+   } _PixelGrid;
+ 
+   _PixelGrid *PixelGrid;
+-  PixelGrid = calloc( ModeSpec[Mode].ImgWidth * ModeSpec[Mode].NumLines * 3, sizeof(_PixelGrid) );
++  PixelGrid = calloc( ModeSpec[Mode].ImgWidth * ModeSpec[Mode].NumLines * 3 + 1, sizeof(_PixelGrid) );
++  PixelGrid[ModeSpec[Mode].ImgWidth * ModeSpec[Mode].NumLines * 3].Time = -1;
+ 
+ 
+   // Initialize Hann windows of different lengths
+--- a/fsk.c
++++ b/fsk.c
+@@ -45,11 +45,6 @@
+     // Read data from DSP
+     readPcm(InSync ? 970: 485);
+ 
+-    if (pcm.WindowPtr < 485) {
+-      pcm.WindowPtr += (InSync ? 970 : 485);
+-      continue;
+-    }
+-
+     // Apply Hann window
+     for (i = 0; i < 970; i++) fft.in[i] = pcm.Buffer[pcm.WindowPtr+i- 485] * Hann[i];
+     

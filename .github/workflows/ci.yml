@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: dsp/ pin check
+        run: make check-dsp
+      - name: Build
+        run: make
+      - name: Test (unit tests, loopback goldens)
+        run: make test
+      - name: Test (ASan + UBSan)
+        run: make sanitize
+      - name: Benchmark
+        run: make bench
+
+  reference:
+    # Differential tests against the pinned reference implementations: slowrx (byte-identical
+    # pictures), pySSTV (bit-identical samples), robot36 (independent decoder).
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: FFTW (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libfftw3-dev pkg-config
+      - name: FFTW (macOS)
+        if: runner.os == 'macOS'
+        run: brew install fftw pkgconf
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pillow==12.3.0
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Build tool and reference harnesses
+        run: |
+          make tool
+          make -C tools/slowrx BUILD=$PWD/build/slowrx
+          sh tools/robot36/build.sh ref/robot36 build/robot36
+      - name: Reference check
+        run: python tools/ref_check.py --build build --json build/ref_check.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ref-check-${{ matrix.os }}
+          path: build/ref_check.json

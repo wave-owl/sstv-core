@@ -1,0 +1,103 @@
+sstv-core -- third-party notices
+================================
+
+sstv-core ports code from the projects below. Their licences are permissive; each notice is
+reproduced as its licence requires.
+
+1. slowrx -- SSTV decoder (receiver port: src/sstv_rx.c, src/sstv_modes.c)
+   https://github.com/windytan/slowrx, mirror https://github.com/wave-owl/slowrx,
+   commit ca6d7012ae788b5057646170bd86590a7f68bd69 (submodule ref/slowrx)
+
+   Copyright (c) 2007-2013, Oona Räisänen (OH2EIQ [at] sral.fi)
+   
+   Permission to use, copy, modify, and/or distribute this software for any
+   purpose with or without fee is hereby granted, provided that the above
+   copyright notice and this permission notice appear in all copies.
+   
+   THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+   WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+   MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+   ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+   WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+   ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+   OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+2. pySSTV -- SSTV encoder (transmitter port: src/sstv_tx.c)
+   https://github.com/dnet/pySSTV, mirror https://github.com/wave-owl/pySSTV,
+   commit d998fad154d3e6ad2d73af5add49beec0d2ab59f (submodule ref/pysstv)
+
+   Copyright (c) 2013 Andras Veres-Szentkiralyi
+   
+   Permission is hereby granted, free of charge, to any person
+   obtaining a copy of this software and associated documentation
+   files (the "Software"), to deal in the Software without
+   restriction, including without limitation the rights to use,
+   copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the
+   Software is furnished to do so, subject to the following
+   conditions:
+   
+   The above copyright notice and this permission notice shall be
+   included in all copies or substantial portions of the Software.
+   
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+   HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+
+3. Pillow -- RGB->YCbCr and RGB->L conversion tables (src/sstv_pil.c), Pillow 12.3.0
+   https://github.com/python-pillow/Pillow (libImaging/ConvertYCbCr.c, libImaging/Convert.c)
+
+   The Python Imaging Library (PIL) is
+   
+       Copyright © 1997-2011 by Secret Labs AB
+       Copyright © 1995-2011 by Fredrik Lundh and contributors
+   
+   Pillow is the friendly PIL fork. It is
+   
+       Copyright © 2010 by Jeffrey 'Alex' Clark and contributors
+   
+   Like PIL, Pillow is licensed under the open source MIT-CMU License:
+   
+   By obtaining, using, and/or copying this software and/or its associated
+   documentation, you agree that you have read, understood, and will comply
+   with the following terms and conditions:
+   
+   Permission to use, copy, modify and distribute this software and its
+   documentation for any purpose and without fee is hereby granted,
+   provided that the above copyright notice appears in all copies, and that
+   both that copyright notice and this permission notice appear in supporting
+   documentation, and that the name of Secret Labs AB or the author not be
+   used in advertising or publicity pertaining to distribution of the software
+   without specific, written prior permission.
+   
+   SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+   SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+   IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL,
+   INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+   LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
+   OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+   PERFORMANCE OF THIS SOFTWARE.
+
+4. robot36 -- SSTV decoder, used only as an independent test oracle (tools/robot36; no code of
+   it is part of libsstv)
+   https://github.com/xdsopl/robot36, mirror https://github.com/wave-owl/robot36,
+   commit 2af2390954aa248725042ba6b1332bbcca68c357 (submodule ref/robot36)
+
+   Copyright (C) 2024 by Ahmet Inan <xdsopl@gmail.com>
+   
+   Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
+   
+   THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+5. fldigi-dsp-core -- FFT (fdsp_gfft), linked from the submodule dsp/ (pinned by dsp.lock)
+   https://github.com/wave-owl/fldigi-dsp-core, GPL-3.0-or-later (see LICENSE, last
+   paragraph).
+
+6. QSSTV (Johan Maes ON4QZ, GPL-2.0-or-later, https://github.com/ON4QZ/QSSTV) and the
+   published mode specifications (J. L. Barber N7CXI 2000, D. Jones KB4YZ 1998/1999) are cited
+   for timing facts only (README, "Corrections"); no QSSTV code is part of sstv-core.

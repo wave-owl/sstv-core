@@ -1,0 +1,12 @@
+[submodule "dsp"]
+	path = dsp
+	url = https://github.com/wave-owl/fldigi-dsp-core.git
+[submodule "ref/slowrx"]
+	path = ref/slowrx
+	url = https://github.com/wave-owl/slowrx.git
+[submodule "ref/pysstv"]
+	path = ref/pysstv
+	url = https://github.com/wave-owl/pySSTV.git
+[submodule "ref/robot36"]
+	path = ref/robot36
+	url = https://github.com/wave-owl/robot36.git
