@@ -1,0 +1,84 @@
+{
+  "gitlinks": {
+    "dsp": {
+      "repository": "wave-owl/fldigi-dsp-core",
+      "licenses": [
+        "LICENSE"
+      ]
+    },
+    "ref/pysstv": {
+      "repository": "wave-owl/pySSTV",
+      "licenses": [
+        "LICENSE.txt"
+      ],
+      "role": "reference-only"
+    },
+    "ref/robot36": {
+      "repository": "wave-owl/robot36",
+      "licenses": [
+        "LICENSE"
+      ],
+      "role": "reference-only"
+    },
+    "ref/slowrx": {
+      "repository": "wave-owl/slowrx",
+      "licenses": [
+        "COPYING"
+      ],
+      "role": "reference-only"
+    }
+  },
+  "vendored": [
+    {
+      "path": "src/sstv_rx.c",
+      "repository": "wave-owl/slowrx",
+      "commit": "ca6d7012ae788b5057646170bd86590a7f68bd69",
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    },
+    {
+      "path": "src/sstv_modes.c",
+      "repository": "wave-owl/slowrx",
+      "commit": "ca6d7012ae788b5057646170bd86590a7f68bd69",
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    },
+    {
+      "path": "src/sstv_tx.c",
+      "repository": "wave-owl/pySSTV",
+      "commit": "d998fad154d3e6ad2d73af5add49beec0d2ab59f",
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    },
+    {
+      "path": "src/sstv_pil.c",
+      "repository": null,
+      "commit": null,
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "NOTICE",
+        "src/sstv_pil.c"
+      ]
+    }
+  ],
+  "references": [],
+  "models": [],
+  "external_libraries": []
+}

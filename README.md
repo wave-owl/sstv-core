@@ -179,3 +179,12 @@ slowrx's stored luminance of the longest mode, Pasokon P7); transmitter 0.01 % o
 ISC (see `LICENSE` and `NOTICE`: slowrx ISC, pySSTV MIT, Pillow MIT-CMU). The built library
 links fldigi-dsp-core's FFT, which is GPL-3.0-or-later; a binary containing it is distributed
 under GPL-3.0-or-later as a whole.
+
+<!-- wave-owl-source-sbom-docs:start -->
+## Source SBOMs
+
+Every published release, including prereleases, receives automatically generated
+CycloneDX JSON and readable documentation. See the [initial source report](SBOM.md),
+[CycloneDX JSON](SBOM.cdx.json) and [release policy](SBOM-POLICY.md) for scope,
+release assets, provenance declarations and reproduction instructions.
+<!-- wave-owl-source-sbom-docs:end -->

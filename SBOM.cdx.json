@@ -1,0 +1,680 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "7561d461b00ff11d",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "383496adfd8cce27c63aae4448e651e638e84a41"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "6efad547083d96f6497aa4aa571ff65d64a2c67224405e3d74eb5df0eaa9b960"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v3/sstv-core/.source-input/.github/workflows/ci.yml",
+      "type": "file"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/fldigi-dsp-core@f6f9af1af811243b89abc53132de27d5e2620850",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/fldigi-dsp-core/tree/f6f9af1af811243b89abc53132de27d5e2620850"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/fldigi-dsp-core",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "gitlink"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "f6f9af1af811243b89abc53132de27d5e2620850"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "ff909bf19ab3dce19159812bb7b949254b0a8ddd"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/fldigi-dsp-core"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "type": "library",
+      "version": "f6f9af1af811243b89abc53132de27d5e2620850"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/pySSTV@d998fad154d3e6ad2d73af5add49beec0d2ab59f",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/pySSTV/tree/d998fad154d3e6ad2d73af5add49beec0d2ab59f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/pySSTV",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "reference-only"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "d998fad154d3e6ad2d73af5add49beec0d2ab59f"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "94533e80e07a68973bc6201786e3c7c6b79fcd2a"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/pySSTV"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE.txt\", \"sha256\": \"dd04ede42aec9ae526e6eacb8dd8319366878fd4ff2ab780049cc379f7ed7107\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "scope": "excluded",
+      "type": "library",
+      "version": "d998fad154d3e6ad2d73af5add49beec0d2ab59f"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/robot36@2af2390954aa248725042ba6b1332bbcca68c357",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/robot36/tree/2af2390954aa248725042ba6b1332bbcca68c357"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/robot36",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "reference-only"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "2af2390954aa248725042ba6b1332bbcca68c357"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "5ef6844335561b1abbe0d1936d466e652d3a25f1"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/robot36"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"ecce2c7224a7224d7a812f411ac4375291710af2c67951ba69abf51d68dccb2f\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "scope": "excluded",
+      "type": "library",
+      "version": "2af2390954aa248725042ba6b1332bbcca68c357"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/slowrx@ca6d7012ae788b5057646170bd86590a7f68bd69",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/slowrx/tree/ca6d7012ae788b5057646170bd86590a7f68bd69"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/slowrx",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "reference-only"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "ca6d7012ae788b5057646170bd86590a7f68bd69"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "a5cbbf0f5d82c457587fbcf0fe2d865ae173ecb3"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/slowrx"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"COPYING\", \"sha256\": \"336350dc5f6bb4baa4c6c25d4961630b5ba58456c106f15a7d4449dfb96382b6\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "scope": "excluded",
+      "type": "library",
+      "version": "ca6d7012ae788b5057646170bd86590a7f68bd69"
+    },
+    {
+      "bom-ref": "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3",
+      "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+      "name": "actions/checkout",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/checkout@v4",
+      "type": "library",
+      "version": "v4"
+    },
+    {
+      "bom-ref": "pkg:github/actions/setup-java@v4?package-id=6775c2fc713664e0",
+      "cpe": "cpe:2.3:a:actions\\/setup-java:actions\\/setup-java:v4:*:*:*:*:*:*:*",
+      "name": "actions/setup-java",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup-java:actions\\/setup_java:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup_java:actions\\/setup-java:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup_java:actions\\/setup_java:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-java:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_java:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/setup-java@v4",
+      "type": "library",
+      "version": "v4"
+    },
+    {
+      "bom-ref": "pkg:github/actions/setup-python@v5?package-id=0ac68409cceaeece",
+      "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v5:*:*:*:*:*:*:*",
+      "name": "actions/setup-python",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/setup-python@v5",
+      "type": "library",
+      "version": "v5"
+    },
+    {
+      "bom-ref": "pkg:github/actions/upload-artifact@v4?package-id=2350aa1781db3f76",
+      "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*",
+      "name": "actions/upload-artifact",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/upload-artifact@v4",
+      "type": "library",
+      "version": "v4"
+    },
+    {
+      "bom-ref": "vendored:src/sstv_modes.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/slowrx/tree/ca6d7012ae788b5057646170bd86590a7f68bd69"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/sstv_modes.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}, {\"path\": \"README.md\", \"sha256\": \"02878ed6ea857714a5d88c9542730310f54c2f643b0de073d995b9d9dde8e227\"}, {\"path\": \"src/sstv_modes.c\", \"sha256\": \"4d5387285aa8515697d2a10e3799d96f13e38804860bada41a1ffa93b451daf8\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "ca6d7012ae788b5057646170bd86590a7f68bd69"
+    },
+    {
+      "bom-ref": "vendored:src/sstv_pil.c",
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/sstv_pil.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}, {\"path\": \"src/sstv_pil.c\", \"sha256\": \"fb537e7f3e3f4fe5619b45f890472da2b90a2cddff6c20736d1671d2a8107787\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "unknown upstream origin"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "vendored:src/sstv_rx.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/slowrx/tree/ca6d7012ae788b5057646170bd86590a7f68bd69"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/sstv_rx.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}, {\"path\": \"README.md\", \"sha256\": \"02878ed6ea857714a5d88c9542730310f54c2f643b0de073d995b9d9dde8e227\"}, {\"path\": \"src/sstv_rx.c\", \"sha256\": \"82e2beb85dcec3dedd06f4be8e0d63c1dba0803f7fb0294b49290fecee234cc6\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "ca6d7012ae788b5057646170bd86590a7f68bd69"
+    },
+    {
+      "bom-ref": "vendored:src/sstv_tx.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/pySSTV/tree/d998fad154d3e6ad2d73af5add49beec0d2ab59f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/sstv_tx.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"7d27f429c5457c855e37708dcd30c91c5f2b6414fc7cc48f04bea815c67c24ac\"}, {\"path\": \"README.md\", \"sha256\": \"02878ed6ea857714a5d88c9542730310f54c2f643b0de073d995b9d9dde8e227\"}, {\"path\": \"src/sstv_tx.c\", \"sha256\": \"439c6aa4e42c790a5fc0b507d5a0a33aafdc6579c82bf3237e457429d8571e76\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "d998fad154d3e6ad2d73af5add49beec0d2ab59f"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "unknown",
+      "assemblies": [
+        "git:https://github.com/wave-owl/sstv-core@6e3cc06a266f0bd0c19ee2a0f9df975ea27a6669"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [],
+      "ref": "7561d461b00ff11d"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/fldigi-dsp-core@f6f9af1af811243b89abc53132de27d5e2620850"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/pySSTV@d998fad154d3e6ad2d73af5add49beec0d2ab59f"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/robot36@2af2390954aa248725042ba6b1332bbcca68c357"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/slowrx@ca6d7012ae788b5057646170bd86590a7f68bd69"
+    },
+    {
+      "dependsOn": [
+        "7561d461b00ff11d",
+        "git:https://github.com/wave-owl/fldigi-dsp-core@f6f9af1af811243b89abc53132de27d5e2620850",
+        "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3",
+        "pkg:github/actions/setup-java@v4?package-id=6775c2fc713664e0",
+        "pkg:github/actions/setup-python@v5?package-id=0ac68409cceaeece",
+        "pkg:github/actions/upload-artifact@v4?package-id=2350aa1781db3f76",
+        "vendored:src/sstv_modes.c",
+        "vendored:src/sstv_pil.c",
+        "vendored:src/sstv_rx.c",
+        "vendored:src/sstv_tx.c"
+      ],
+      "ref": "git:https://github.com/wave-owl/sstv-core@6e3cc06a266f0bd0c19ee2a0f9df975ea27a6669"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/setup-java@v4?package-id=6775c2fc713664e0"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/setup-python@v5?package-id=0ac68409cceaeece"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/upload-artifact@v4?package-id=2350aa1781db3f76"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/sstv_modes.c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/sstv_pil.c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/sstv_rx.c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/sstv_tx.c"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "git:https://github.com/wave-owl/sstv-core@6e3cc06a266f0bd0c19ee2a0f9df975ea27a6669",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/sstv-core/tree/6e3cc06a266f0bd0c19ee2a0f9df975ea27a6669"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/sstv-core",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "source-root"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "6e3cc06a266f0bd0c19ee2a0f9df975ea27a6669"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "87bf06f10803485b17ee3e4cb3cfb3647e4aa9d5"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/sstv-core"
+        },
+        {
+          "name": "sbom:release-tags",
+          "value": "[\"v0.1.0\"]"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"c5ac5d99cc60c0fb26d7b381037982f0ea928c02ef4a40f4de1f44aef8f102fe\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "type": "application",
+      "version": "6e3cc06a266f0bd0c19ee2a0f9df975ea27a6669"
+    },
+    "properties": [
+      {
+        "name": "sbom:scope",
+        "value": "Source repository inventory only; completeness is UNKNOWN. Syft inventories tracked source/package manifests. Gitlinks and declared vendored/model evidence are inspected at immutable pins. CMake declarations are conditional requirements, not resolved installations. This is NOT proof of operating-system packages, static-link closure, build-time resolution, or the contents of release binaries."
+      },
+      {
+        "name": "sbom:generation-status",
+        "value": "success"
+      },
+      {
+        "name": "sbom:generation-errors",
+        "value": "[]"
+      }
+    ],
+    "timestamp": "2026-11-02T16:53:47.870597+00:00",
+    "tools": {
+      "components": [
+        {
+          "author": "anchore",
+          "name": "syft",
+          "type": "application",
+          "version": "1.55.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:f1c5cf9e-885b-4d98-9a1f-015c2b763dd7",
+  "specVersion": "1.6",
+  "version": 1
+}
