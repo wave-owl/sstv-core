@@ -13,7 +13,7 @@
           "content": "6efad547083d96f6497aa4aa571ff65d64a2c67224405e3d74eb5df0eaa9b960"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v3/sstv-core/.source-input/.github/workflows/ci.yml",
+      "name": "tracked-source/.github/workflows/ci.yml",
       "type": "file"
     },
     {

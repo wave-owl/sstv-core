@@ -37,7 +37,7 @@ None.
 | actions/setup-java | v4 | Syft source/package discovery | unresolved |
 | actions/setup-python | v5 | Syft source/package discovery | unresolved |
 | actions/upload-artifact | v4 | Syft source/package discovery | unresolved |
-| /Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v3/sstv-core/.source-input/.github/workflows/ci.yml | unresolved | Syft source/package discovery | unresolved |
+| tracked-source/.github/workflows/ci.yml | unresolved | Syft source/package discovery | unresolved |
 
 License evidence paths/hashes, source manifests, model hashes and conditional
 CMake declarations are recorded in SBOM.cdx.json. Declared upstream pins do not
